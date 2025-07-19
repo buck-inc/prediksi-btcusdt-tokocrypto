@@ -13,7 +13,7 @@ st.caption("📊 Data Terbaru")
 @st.cache_data
 def get_data():
     url = "https://api.binance.com/api/v3/klines"
-    params = {"symbol": "BTCUSDT", "interval": "m5", "limit": 500}
+    params = {"symbol": "BTCUSDT", "interval": "1m", "limit": 1000}
     response = requests.get(url, params=params)
     if response.status_code != 200:
         return None
