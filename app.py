@@ -6,7 +6,7 @@ import requests
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
-st.set_page_config(page_title="Prediksi Harga BTCUSDT Tokocrypto", layout="wide")
+st.set_page_config(page_title="Prediksi Harga Crypto Tokocrypto", layout="wide")
 st.title("📈 Prediksi Harga Crypto (Data Binance/Tokocrypto)")
 st.caption("📊 Data Terbaru")
 
