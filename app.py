@@ -6,14 +6,14 @@ import requests
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
-st.set_page_config(page_title="Prediksi Harga Crypto Tokocrypto", layout="wide")
+st.set_page_config(page_title="Prediksi Harga BTCUSDT Tokocrypto", layout="wide")
 st.title("📈 Prediksi Harga Crypto (Data Binance/Tokocrypto)")
 st.caption("📊 Data Terbaru")
 
 @st.cache_data
 def get_data():
     url = "https://api.binance.com/api/v3/klines"
-    params = {"symbol": "BTCUSDT", "interval": "1h", "limit": 500}
+    params = {"symbol": "BTCUSDT", "interval": "m5", "limit": 500}
     response = requests.get(url, params=params)
     if response.status_code != 200:
         return None
